@@ -58,8 +58,8 @@ The login screen features an interactive credentials panel. Clicking any role wi
 
 This platform is custom-built for South African educational institutions:
 1. **Locale & Currency**: South African Rand (`ZAR`) format throughout, SA phone numbers (+27), Grade R–12 class mappings, and the 4-term academic school calendar.
-2. **POPIA Compliance**: Built with the Protection of Personal Information Act (Act 4 of 2013) guidelines in mind. Features audit notifications, encrypted data flags, and strict consent banners.
-3. **SASAMS Compatibility**: Structured with metadata fields matching the South African School Administration and Management System standard, preparing files and reports for direct state compliance export.
+2. **POPIA Compliance (Roadmap)**: Designed according to Protection of Personal Information Act (Act 4 of 2013) guidelines. While frontend features audit banners, encrypted field indicators, and parent consent forms, full data residency auditing and access controls require Phase 2 database logs.
+3. **SASAMS Compatibility**: Fields are mapped to match the South African School Administration and Management System (LURITS/SASAMS) structure, laying the foundation for direct XML export utilities in later phases.
 
 ---
 
@@ -82,7 +82,15 @@ Onboarding setup costs cover database provisioning, branding configurations, sta
 | **501 – 800 Learners** | R4,900 /mo | R9,100 /mo | R16,100 /mo |
 | **800+ Learners** | Custom Quote | Custom Quote | Custom Quote |
 
-*Note: Prepaying upfront grants 2 months free subscription.*
+*Note: Prepaying upfront grants 2 months free subscription. There are no lifetime buyouts, lifetime updates, or once-off ownership options.*
+
+---
+
+## ⚠️ Important Disclaimers & Roadmap Status
+
+- **No Backend / No Persistence Disclaimer**: This codebase is a static Phase 1 front-end prototype. No persistent database (such as Supabase, PostgreSQL, or LocalStorage sync) is attached. Actions like adding students, sending invoices, or creating payroll entries will show standard verification alerts rather than modifying permanent data.
+- **Payment Gateway Roadmap**: Payment flows (PayFast, Yoco, Capitec Pay, Instant EFT) are represented in sandbox views. Live API communication, payment webhook checks, and invoice clearing are scheduled for Phase 2.
+- **Centralized Design Assets**: All custom styles, school naming conventions, support mailboxes, and corporate parameters are managed central-site in [theme.js](file:///d:/Digital%20Agency/Embark%20Digitals/Systems/SchoolSystem/src/config/theme.js).
 
 ---
 
