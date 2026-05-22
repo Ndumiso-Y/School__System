@@ -1,0 +1,128 @@
+export const TIER_MARKETING = {
+  1: {
+    name: "Core School Management System",
+    badge: "Tier 1 - Core",
+    priceText: "R3,500/mo",
+    setupFee: "R6,500 once-off",
+    bestFor: "Smaller private schools or schools starting their digital transformation.",
+    purpose: "A working foundation for managing key school records, admin, basic payments, HR, maintenance, and finance visibility.",
+    includes: [
+      "Dashboard summary with basic stats",
+      "Learner records (Grade R - 12)",
+      "Parent/guardian contact files",
+      "Basic staff/teacher registers",
+      "Basic payment tracking & manual matching",
+      "Basic invoicing records",
+      "Basic maintenance ticket list",
+      "Basic finance collection overview",
+      "Daily class attendance overview summaries",
+      "Responsive, clean executive dashboard layout",
+    ],
+    limited: [
+      "Parent login (Preview only, no live interactions)",
+      "Teacher login (Preview only, no grade input/roll call)",
+      "Results tracking (Basic scores list, no reports generation)",
+      "Payroll (Basic salary summary fields, no workflows/payslips)",
+      "Maintenance (Simple ticket logging, no custom status tracking)",
+      "Reports (Static basic summaries, no custom parameters)",
+    ],
+    locked: [
+      "Online Parent Payment gateway integration",
+      "Automated WhatsApp/SMS/Email fee reminders",
+      "PDF invoice generation & bulk emailing",
+      "Teacher & Parent full portal access",
+      "Full digital document uploads and storage",
+      "Advanced finance, attendance & results analytics",
+      "Export capability (PDF, CSV, Excel)",
+      "Advanced payroll workflow (Payslip gen, tax deductions)",
+    ]
+  },
+  2: {
+    name: "School Operations Management System",
+    badge: "Tier 2 - Operations",
+    priceText: "R6,500/mo",
+    setupFee: "R9,500 once-off",
+    bestFor: "Growing private schools needing admin, finance, teachers, and parents to work from a structured system.",
+    purpose: "Stronger daily operational control with better workflows, teacher access, parent visibility, improved reporting, attendance, results, maintenance, payroll support, and better finance tracking.",
+    includes: [
+      "Everything in Tier 1",
+      "Improved dashboard with recent activity list",
+      "Teacher login simulation structure",
+      "Parent portal preview with active grades and balances view",
+      "Learner daily roll-call attendance logging",
+      "Learner results recording & subject tracking",
+      "Class and subject mapping (timetables)",
+      "Teacher comments on learners & academic progress indicators",
+      "Central announcements & events bulletin board",
+      "Meeting tracker (Parent-Teacher, Staff, Board)",
+      "Outstanding balances view & collection statuses",
+      "Structured payroll (ZAR salary records, status flags)",
+      "HR register with employment status & leave tracking",
+      "Maintenance tickets with priority, cost estimates & assignee details",
+      "Better mobile & tablet responsiveness",
+      "Operational alerts for missing marks or late payments",
+    ],
+    limited: [
+      "Live parent online payment processing (Provider setup ready)",
+      "Basic document files reference (No cloud storage space)",
+      "No automated payment warnings (Manual triggers only)",
+      "Reports (No advanced export downloads)",
+    ],
+    locked: [
+      "Fully integrated payment gateway (e.g. PayFast/Yoco)",
+      "Automated automated SMS/Email collection reminders",
+      "PDF downloadable invoices and progress reports",
+      "Full cloud document storage & upload system",
+      "Principal governance dashboard",
+      "Full CSV/Excel data exports",
+    ]
+  },
+  3: {
+    name: "Full School Digital Platform",
+    badge: "Tier 3 - Full Platform",
+    priceText: "R11,500/mo",
+    setupFee: "R14,500 once-off",
+    bestFor: "Schools wanting a complete digital operations platform across admin, finance, parents, teachers, HR, governance, and reporting.",
+    purpose: "A full school digital platform with parent payments, portals, automation, documents, advanced reports, exports, analytics, permissions, and scalable governance.",
+    includes: [
+      "Everything in Tier 2",
+      "Full parent portal (live records, view report cards)",
+      "Full teacher portal (results entry, timetable, schedules)",
+      "Online parent payments integration-ready structure",
+      "Automated payment and announcement reminders (SMS/Email/WhatsApp)",
+      "PDF invoice generation & bulk emailing system",
+      "Excel, CSV, and PDF exports for all tables",
+      "Full payroll workflows with payslip generation & allowances",
+      "Cloud document storage (Upload/download learner birth certs, contracts)",
+      "Advanced principal governance dashboards & analytics",
+      "Finance forecasting & expense category breakdown",
+      "Detailed attendance analytics & results heatmaps",
+      "Audit logs of user additions/edits",
+      "Multi-campus/multi-branch configuration support",
+    ],
+    limited: [],
+    locked: []
+  }
+};
+
+export const COMPARISON_FEATURES = [
+  { category: "Core Operations", name: "Learner & Parent Profiles", t1: "Basic", t2: "Advanced", t3: "Full System" },
+  { category: "Core Operations", name: "Staff & HR Register", t1: "Basic List", t2: "Employment details", t3: "Full Profiles & Logs" },
+  { category: "Core Operations", name: "Class & Timetable Planning", t1: "Locked", t2: "Operational View", t3: "Interactive Editor" },
+  
+  { category: "Academics", name: "Results & Marks Capture", t1: "Manual totals", t2: "Subject & term list", t3: "Analytics & PDF Reports" },
+  { category: "Academics", name: "Attendance Tracking", t1: "Basic sum", t2: "Daily Roll Call", t3: "Analytics & Warnings" },
+  
+  { category: "Finances & Billing", name: "Invoicing & Matching", t1: "Manual register", t2: "Automated billing", t3: "PDF Gen & Emailing" },
+  { category: "Finances & Billing", name: "Outstanding Balances View", t1: "Basic view", t2: "Ageing analysis", t3: "Auto-reminders" },
+  { category: "Finances & Billing", name: "Online Payments", t1: "Locked", t2: "Setup ready", t3: "Live Integration" },
+  { category: "Finances & Billing", name: "Payroll Operations", t1: "Basic sum", t2: "ZAR records", t3: "Tax / Payslip workflows" },
+  
+  { category: "School Maintenance", name: "Maintenance Tickets", t1: "Simple Logging", t2: "Status & Cost", t3: "Cost Analytics" },
+  
+  { category: "Documents & Compliance", name: "Document Uploads", t1: "Locked", t2: "Basic Registry", t3: "Full Storage & Verification" },
+  { category: "Documents & Compliance", name: "POPIA Safe Compliance", t1: "Manual Policy", t2: "Privacy Flags", t3: "Encryption & Audit Logs" },
+  
+  { category: "Exports & Governance", name: "Reports Export (PDF/Excel)", t1: "Locked", t2: "Locked", t3: "Full Access" },
+  { category: "Exports & Governance", name: "Principal Dashboard", t1: "Summary card", t2: "Operational view", t3: "Advanced Board Reports" },
+];
