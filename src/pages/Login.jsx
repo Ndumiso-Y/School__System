@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { KeyRound, Shield, HelpCircle, CheckCircle } from "lucide-react";
 import theme from "../config/theme";
+import logoImage from "../assets/image.png";
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -44,8 +45,8 @@ export const Login = () => {
         <div className="absolute -bottom-24 -right-24 w-48 h-48 rounded-full bg-indigo-600/10 blur-3xl"></div>
 
         <div className="relative text-center mb-6">
-          <div className="inline-flex w-12 h-12 rounded-xl bg-blue-600 text-white font-extrabold text-2xl items-center justify-center shadow-lg shadow-blue-500/25 mb-3">
-            S
+          <div className="inline-flex w-14 h-14 rounded-2xl bg-slate-950 items-center justify-center shadow-lg shadow-slate-950/25 mb-3 border border-slate-800 p-1.5">
+            <img src={logoImage} alt={theme.logo.alt} className="w-full h-full object-contain" />
           </div>
           <h1 className="text-xl font-bold tracking-tight text-white">{theme.companyName}</h1>
           <p className="text-xs text-slate-400 mt-1">{theme.tagline}</p>

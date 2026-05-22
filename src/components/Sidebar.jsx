@@ -22,6 +22,7 @@ import {
   X
 } from "lucide-react";
 import theme from "../config/theme";
+import logoImage from "../assets/image.png";
 
 const menuGroups = [
   {
@@ -95,9 +96,11 @@ export const Sidebar = ({ isOpen, toggleSidebar }) => {
         {/* Sidebar Header / Brand */}
         <div className="flex items-center justify-between h-16 px-6 border-b border-slate-900 bg-slate-950">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white font-extrabold text-lg shadow-md shadow-blue-500/20">
-              S
-            </div>
+            <img
+              src={logoImage}
+              alt={theme.logo.alt}
+              className="w-8 h-8 rounded-lg object-contain bg-slate-900 p-0.5 border border-slate-800"
+            />
             <div className="flex flex-col">
               <span className="font-extrabold text-sm tracking-tight text-white">{theme.schoolName}</span>
               <span className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Foundation Portal</span>

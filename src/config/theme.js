@@ -7,8 +7,7 @@ export const theme = {
   companyName: "School Management System",
   tagline: "Comprehensive Operations & Governance Portal",
   logo: {
-    // Relative path or absolute path for later customization
-    path: "assets/logo-placeholder.svg",
+    path: "/src/assets/image.png",
     alt: "School Management System Logo",
   },
   colors: {
